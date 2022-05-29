@@ -1,5 +1,6 @@
-import CardHeader from "./CardHeader";
+import PropTypes from 'prop-types';
 
+import CardHeader from "../card-header/CardHeader";
 function Card({ title, children }: any) {
   console.log();
   return (
@@ -8,11 +9,13 @@ function Card({ title, children }: any) {
       <div className="card-body">
         {children}
       </div>
-      <div className="card-footer" hidden={true}>
-
-      </div>
     </div>
   )
+}
+
+Card.propType = {
+  title: PropTypes.string,
+  children: PropTypes.element.isRequired
 }
 
 export default Card;
