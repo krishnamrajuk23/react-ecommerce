@@ -16,8 +16,8 @@ const Button = ({ children, name, bType, disable, size = 'sm', click }:ButtonPro
     btnClass = bType;
   }
 
-  btnClass = 'btn-' + btnClass + 'btn-' + size;
-  return (<button type='button' className={'btn ' + btnClass} disabled={disable} onClick={(event) => click && click(event)}>
+  btnClass = '  btn-' + btnClass + '  btn-' + size;
+  return (<button type='button' className={'btn' + btnClass} disabled={disable} onClick={(event) => click && click(event)}>
     { children}
     {name}
   </button>)
