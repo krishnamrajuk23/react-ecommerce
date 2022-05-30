@@ -1,4 +1,5 @@
 import React from 'react';
+import Card from '../../theme/components/card/Card';
 
 export class CartItems extends React.Component {
   constructor(props: any) {
@@ -10,6 +11,9 @@ export class CartItems extends React.Component {
   render() {
     return (
       <div>
+        <Card title="Product name">
+          Cart Items
+        </Card>
       </div>
     )
   }

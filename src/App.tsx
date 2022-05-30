@@ -1,10 +1,11 @@
 import './App.css';
+import Menu from './components/menu/Menu';
 import HomeContainer from './containers/home';
 
 function App() {
   return (
     <div className="App">
-      <HomeContainer></HomeContainer>
+       <Menu/>
     </div>
   );
 }
