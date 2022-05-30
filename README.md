@@ -29,6 +29,9 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 ## Routing
   Routing is implemented in react old version using Router and Switch, but now its replaced with Routes and inner child consist of Route with path for Example
 
+**Note: we want to connect your app to the browser's URL: import BrowserRouter and render it around your whole app.
+
+### ` <BrowserRouter> <App /> </BrowserRouter>`
 ### `<Link to="/"> home</Link>`
 
 ### `<Routes> <Route path="/" element={<HomeContainer />} /> <Routes>`
