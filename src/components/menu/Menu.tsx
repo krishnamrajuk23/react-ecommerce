@@ -15,22 +15,20 @@ import NoPageFound from "../no-page-found/NoPageFound";
 export default function Menu(){
   return (
     <main>
-      <ul>
-        <ListItem>
+       <nav
+        style={{
+          borderBottom: "solid 1px",
+          paddingBottom: "1rem",
+        }}
+      >
           <Link to='/'>home</Link>
-        </ListItem>
-        <ListItem>
           <Link to='/cart'>cart</Link>
-        </ListItem>
-      </ul>
+      </nav>
       <Routes>
         <Route path="/" element={<HomeContainer />} />
         <Route path="/cart" element={<CartItems />}/>
         <Route path="*" element={<NoPageFound />}/>
       </Routes>
     </main>
-      
-
-    
   )
 }
