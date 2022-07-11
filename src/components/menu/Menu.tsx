@@ -7,9 +7,9 @@ import {
 } from "react-router-dom";
   
 import HomeContainer from "../../containers/home";
-import ListItem from "../../theme/components/list-item/ListItem";
 import { CartItems } from "../cart-items/CartItems";
 import NoPageFound from "../no-page-found/NoPageFound";
+import ProductLandingPage from "../product/container/product-landing-page";
 
 
 export default function Menu(){
@@ -21,12 +21,14 @@ export default function Menu(){
           paddingBottom: "1rem",
         }}
       >
-          <Link to='/'>home</Link>
-          <Link to='/cart'>cart</Link>
+          <Link to='/'>Home</Link>
+        <Link to='/cart'>Cart</Link>
+        <Link to='/product'>Product</Link>
       </nav>
       <Routes>
         <Route path="/" element={<HomeContainer />} />
-        <Route path="/cart" element={<CartItems />}/>
+        <Route path="/cart" element={<CartItems />} />
+        <Route path="/product" element={<ProductLandingPage />}/>
         <Route path="*" element={<NoPageFound />}/>
       </Routes>
     </main>

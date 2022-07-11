@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import Menu from './components/menu/Menu';
 import HomeContainer from './containers/home';
 
