@@ -55,6 +55,7 @@
   
       .nav-bar-link {
         margin-right: 10px;
+        cursor: pointer;
       }
   
       .nav-bar-links {}
@@ -66,7 +67,7 @@
         .nav-bar-icon {
           position: relative;
           margin-right: 15px;
-  
+          cursor: pointer;
           .navBarIconBadge {
             position: absolute;
             top: -5px;
@@ -90,5 +91,6 @@
       height: 32px;
       border-radius: 50%;
       object-fit: cover;
+      cursor: pointer;
     }
 }
