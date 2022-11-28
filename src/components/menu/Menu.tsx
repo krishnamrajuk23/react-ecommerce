@@ -6,7 +6,7 @@ import {
   Routes
 } from "react-router-dom";
   
-import HomeContainer from "../../containers/home";
+// import HomeContainer from "../../containers/home";
 import { CartItems } from "../cart-items/CartItems";
 import NoPageFound from "../no-page-found/NoPageFound";
 import ProductLandingPage from "../product/container/product-landing-page";
@@ -26,7 +26,7 @@ export default function Menu(){
         <Link to='/product'>Product</Link>
       </nav>
       <Routes>
-        <Route path="/" element={<HomeContainer />} />
+        {/* <Route path="/" element={<HomeContainer />} /> */}
         <Route path="/cart" element={<CartItems />} />
         <Route path="/product" element={<ProductLandingPage />}/>
         <Route path="*" element={<NoPageFound />}/>
