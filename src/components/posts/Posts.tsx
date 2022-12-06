@@ -2,7 +2,9 @@ import "./posts.scss";
 import { MoreVert } from'@mui/icons-material';
 import { Users } from '../../dummyData';
 export default function Post({ post }: any) {
+
   const user:any = Users.find(user => user.id === post.userId);
+
   return (
     <div className="post">
       <div className="postWrapper">
